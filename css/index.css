@@ -1,0 +1,1979 @@
+@charset "utf-8";
+#warp{
+    overflow: hidden;
+}
+.header-m1{
+    display: none;
+}
+.header-area{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: black;
+}
+.header-logo{
+    width: 140px;
+    margin-right: 150px;
+}
+
+.header-logo a{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-right: 80px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.menu li:nth-child(4){
+    margin: 0;
+}
+.banner-back{
+    background:url(../img/해더/해더백그라운드.jpg) no-repeat center center ;
+    background-size: cover;
+    height: 420px;
+    padding: 0 200px 0 200px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+.banner-txt-box{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.baner-txt h2{
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.baner-txt h3{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 300;
+
+}
+.baner-camera{
+    width: 745px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.baner-img{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    animation: header-go 0.8s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header-go{
+    0% {
+        top: 150%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+
+.icon-topbox{
+    display: flex;
+    justify-content: flex-end;
+    margin:0 5px 2px 0;
+}
+.icon-topbox a{
+    font-size: 0.75em;
+}
+
+.icon-bottombox input{
+    padding: 3px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #dbdbdb;
+    color: #ffffff;
+}
+.icon-bottombox{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end
+}
+.icon-menu{
+    margin-left: 5px;
+}
+.icon-bottombox:before{
+    content: "";
+    background: url(../img/해더/search_path.svg) no-repeat center center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 5px;
+    left: -30px;
+    cursor: pointer;
+}
+
+
+/* section 1 */
+.sec-1{
+    height:800px;
+    width: 100vw;
+    background: url(../img/섹션-1/검정색백그라운드.jpg) no-repeat center center;
+    background-size: cover;
+}
+.sec-1-area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/* section-Left */
+.sec-1-l{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 70px;
+    box-sizing: border-box;
+    
+}
+
+.sec-1-l .sec-1-txt h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 3.125em;
+    margin-bottom: 25px;
+}
+.sec-1-l .sec-1-txt p{
+    color: #fff;
+    font-weight: 200;
+    font-size: 1em;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+/* section-Right */
+.sec-1-r{
+    width: 50%;
+    height: 100%;
+}
+.sec-1-mask{
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+.sec-area{
+    width: 33.333%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.sec-img{
+    width: 687px;
+    height: 507px;
+}
+.sec-1-but{
+    width: 100% !important;
+    height: 30px !important;
+    bottom: 10% !important;
+    left: -10% !important;
+}
+.swiper-pagination-bullet{
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 30px !important;
+    background-color: #C4C4C4 !important;
+    opacity: 20% !important;
+}
+.swiper-pagination-bullet-active {
+    background: red !important;
+    opacity: 100% !important;
+}
+.swiper-pagination-bullet:nth-child(3){
+    margin-right: 0 !important;
+}
+
+
+
+/* section 2 */
+
+.sec-2-top,.sec-2-bottom{
+    width: 100%;
+    height: 470px;
+    display: flex;
+}
+.sec-2-black{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+}
+.sec-2-t{
+    width: 50%;
+    height: 100%;
+    background: url(../img/섹션-2/earth-gf757ce0d7_640.jpg) no-repeat center center;
+    background-size: cover;
+    filter:grayscale(100%);
+    transition: 1s;
+}
+.sec-2-b{
+    width: 50%;
+    height: 100%;
+    background: url(../img/섹션-2/2-1.jpg) no-repeat center center;
+    background-size: 100% 100% ;
+    filter:grayscale(100%);
+    transition: 1s;
+}
+.sec-2-t:hover{
+    filter:grayscale(0%);
+}
+.sec-2-b:hover{
+    filter:grayscale(0%);
+    animation: enlargement 3s linear;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes enlargement {
+    0% { background-size: 100% 100% ; }
+    100% { background-size: 150% 150%; }
+}
+.sce-2-area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.sec2-l-box{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+.sec-2-txt p{
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 1.250em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: right;
+}
+.sec-2-txt h3{
+    color: #FFF;
+    margin-bottom: 5px;
+    font-size: 1.35em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.sec-2-r-box{
+    width: 50%;
+    height: 100%;
+}
+.sec-2-img{
+    width: 100%;
+    height: 100%;
+}
+.sec-2-img img{
+    object-fit: contain;
+}
+sec-2-img-img{
+    object-fit: cover;
+}
+.txt2{
+    position: relative;
+    text-align: right;
+}
+.txt2br{
+    margin-right:100px;
+}
+.txt2::after{
+    content: "";
+    background: url(../img/섹션-2/sec2-arrow.png) no-repeat center center;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: -32px;
+    bottom: 0;
+}
+
+/* section 3 */
+
+.sec3-header{
+    height: 206px;
+    display: flex;
+    align-items: center;
+    margin: 0 130px;
+}
+.sec3-header-area{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.sec3-header-area h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec3-button{
+    width: 150px;
+    height: 35px;
+    position: relative;
+    overflow: hidden;
+}
+.sec3-button:hover .button-back{
+    top: 0;
+}
+button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #ffffff;
+    position:absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.button-back{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.8);
+    position:absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.5s;
+}
+
+/* section 3 슬라이더 애니메이션 부분 */
+.sec-3{
+    margin-bottom: 200px;
+}
+.sec3-mask{
+    height: 500px;
+    margin: 0 130px;
+    overflow: hidden;
+}
+.auto-slider-wrap{
+    height: 100%;
+    width: 500%;
+    display: flex;
+}
+.auto-slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: slider 35s linear infinite;
+}
+.in-auto-slider{
+    width: calc(14.285% - 20px);
+    height: 100%;
+    margin-right: 20px;
+}
+.in-auto-slider a{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.img-1,
+.img-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sec3-txt{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.sec3-txt .price,
+.sec3-txt .title{
+    margin-top: 5px;
+    background-color: rgba(128, 128, 128, 0.329);
+}
+.sec3-hover{
+    box-shadow: inset 0 0 10px #fff;
+}
+.sec3-hover img{
+    object-fit: contain;
+}
+.sec3-hover:hover .img-2,
+.sec3-hover:hover .sec3-txt .price{
+    opacity: 1;
+}
+.sec3-hover:hover .img-1{
+    opacity: 0;
+}
+/* hover하면 보이는 영역 */
+.img-1{
+    transition: 1s;
+}
+.img-2{
+    opacity: 0;
+    transition: 1s;
+}
+.sec3-txt .price{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+
+@keyframes slider {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  /* section 4 */
+
+
+  .sec-4{
+      width: 100%;
+      height: 230px;
+      padding: 0 130px;
+      box-sizing: border-box;
+      /* background-color: #000; */
+      margin-bottom: 100px;
+  }
+  .sec4-area{
+      width: 100%;
+      height: 100%;
+      /* background-color: #C4C4C4; */
+      display: flex;
+      justify-content: space-between;
+  }
+  .sec4-l{
+      width: calc(50% - 10px);
+      height: 100%;
+      background: url(../img/섹션-4/sec4-l.jpg) no-repeat center center;
+      background-size: cover;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+  }
+  .sec4-r{
+    width: calc(50% - 10px);
+    height: 100%;
+    background: url(../img/섹션-4/sec4-r.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.sec4-hover{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.7);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.3s;
+}
+.sec4-l:hover .sec4-hover,
+.sec4-r:hover .sec4-hover{
+    top: 91%;
+}
+.sec4-txt{
+    margin-left: 5%;
+    height: 25px;
+    position: relative;
+}
+.sec4-txt h3{
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 1.313em;
+    color: #fff;
+}
+.sec4-txt:after{
+    content: "";
+    background: url(../img/섹션-4/sec4-arrow.png) no-repeat center center;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    right: -35px;
+}
+
+
+/* parallex-title */
+.parallex-title{
+    width: 100%;
+    height: 220px;
+}
+.title-t{
+    width: 100%;
+    height: calc(50% - 10px);
+    background-color: #000;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    left: -1%;
+}
+.title1-top{
+    position: absolute;
+    top: 100%;
+}
+
+.title1-go{
+    background: url(../img/Parallax/title-go.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left:0%;
+    top:0%;
+}
+.title1-go.active{
+    animation:txt-go 2.3s linear ;
+    animation-fill-mode: forwards;
+}
+
+.titlel2-go{
+    background: url(../img/Parallax/title-go.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left:-7%;
+    top:0% !important; 
+}
+.titlel2-go.active{
+    animation:txt-go2 1.9s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 2.3s;
+}
+
+.title1-1{
+    background: url(../img/Parallax/title-C.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 7%;
+}
+.title1-1.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.title1-2{
+    background: url(../img/Parallax/title-A.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 12%;
+}
+.title1-2.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+}
+.title1-3{
+    background: url(../img/Parallax/title-N.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 17.5%;
+}
+.title1-3.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+.title1-4{
+    background: url(../img/Parallax/title-O.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 22.5%;
+}
+.title1-4.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 0.9s;
+}
+.title1-5{
+    background: url(../img/Parallax/title-N.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 27.5%;
+}
+.title1-5.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.title1-6{
+    background: url(../img/Parallax/title-S.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 36%;
+}.title1-6.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 1.4s;
+}
+.title1-7{
+    background: url(../img/Parallax/title-T.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 41.5%;
+}.title1-7.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+.title1-8{
+    background: url(../img/Parallax/title-U.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 46.5%;
+}.title1-8.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 1.6s;
+}
+.title1-9{
+    background: url(../img/Parallax/title-D.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 51.5%;
+}.title1-9.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 1.7s;
+}
+.title1-10{
+    background: url(../img/Parallax/title-I.png) no-repeat center center;
+    background-size:contain ;
+    width: 3%;
+    height: 100%;
+    left: 57%;
+}.title1-10.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+}
+.title1-11{
+    background: url(../img/Parallax/title-O.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 59.5%;
+}
+.title1-11.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 1.9s;
+}
+.title-b{
+    width: 100%;
+    height: calc(50% - 10px);
+    background-color: #000;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    top: 0;
+    left: 0%;
+
+}
+.title-b.active{
+    animation:txt-slider2 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 4.2s;
+}
+.title1-bottom{
+    position: absolute;
+    top: 100%;
+}
+.title2-1{
+    background: url(../img/Parallax/title-P.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 7%;
+
+}
+.title2-1.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 2.7s;
+}
+.title2-2{
+    background: url(../img/Parallax/title-H.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 12%;
+}
+.title2-2.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 2.8s;
+}
+.title2-3{
+    background: url(../img/Parallax/title-O.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 17%;
+}
+.title2-3.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 2.9s;
+}
+.title2-4{
+    background: url(../img/Parallax/title-H.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 22%;
+}
+.title2-4.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+.title2-5{
+    background: url(../img/Parallax/title-O.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 27%;
+}
+.title2-5.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 3.1s;
+}
+.title2-6{
+    background: url(../img/Parallax/title-G.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 32.5%;
+}
+.title2-6.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 3.2s;
+}
+.title2-7{
+    background: url(../img/Parallax/title-R.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 37.5%;
+}
+.title2-7.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 3.3s;
+}
+.title2-8{
+    background: url(../img/Parallax/title-A.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 42.5%;
+}
+.title2-8.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 3.4s;
+}
+.title2-9{
+    background: url(../img/Parallax/title-P.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 48%;
+
+}
+.title2-9.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s
+}
+.title2-10{
+    background: url(../img/Parallax/title-H.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 53%;
+}
+.title2-10.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 3.6s;
+}
+.title2-11{
+    background: url(../img/Parallax/title-E.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 58%;
+}
+.title2-11.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 3.7s;
+}
+.title2-12{
+    background: url(../img/Parallax/title-R.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 63%;
+}
+.title2-12.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 3.8s;
+}
+.title2-13{
+    background: url(../img/Parallax/title-R.png) no-repeat center center;
+    background-size:contain ;
+    width: 6%;
+    height: 100%;
+    left: 69%;
+}
+.title2-13.active{
+    animation:txt-slider 0.3s linear ;
+    animation-fill-mode: forwards;
+    animation-delay: 3.9s;
+}
+
+@keyframes txt-slider{
+    from{
+        top: 100%;
+    }
+    to{
+        top: 0%;
+    }
+}
+@keyframes txt-slider2{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 22%;
+    }
+}
+@keyframes txt-go {
+    0%{
+        left: -7%;
+    }
+    100%{
+        left: 67%;
+    }
+}
+@keyframes txt-go2 {
+    0%{
+        left: -7%;
+    }
+    100%{
+        left: 70%;
+    }
+}
+
+
+
+/*  */
+/* .container {
+    height: 100vh;
+  } */
+  .scrollEvent{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  /* .container img {
+    width: 100%;
+    position: absolute;
+    height: 120vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+  } */
+  .container .img1{
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    right: 20%;
+    top: 200px;
+  }
+  .container .img2{
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    top: 1040px;
+    left: 10%;
+  }
+  .container .img3{
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    top: 1040px;
+    left: 40%;
+    z-index: 9;
+  }
+.img-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.parallex-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.img-hover{
+    opacity: 0;
+    transition: 0.5s;
+}
+.img-hover:hover{
+    opacity: 1;
+}
+.img-hover:hover ~ .parallex-txt{
+    opacity: 1;
+    transition: 2s;
+}
+
+.parallex-txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    color:darkgoldenrod;
+    transform: translate(-50%);
+    opacity: 0;
+
+}
+
+
+.parallex-txt h3{
+    margin-top: 5px;
+    margin-right: 13px;
+}
+
+
+
+/* section 5 */
+.sec-5{
+    width: 100%;
+}
+.sec5-m{
+    display: none;
+}
+.back-l{
+    width: 50%;
+    height: 80%;
+    background-color: #000;
+}
+.back-r{
+    width: 50%;
+    height: 80%;
+    background-color: #FFF;
+}
+.camera{
+    position: absolute;
+    top: 55%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+}
+.txt-l{
+    width: 540px;
+    height: 140px;
+    position: absolute;
+    top: 32%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+    background: url(../img/섹션-5/흰색.png) no-repeat center center;
+    background-size: cover;
+}
+.txt-r{
+    width: 540px;
+    height: 140px;
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    background: url(../img/섹션-5/빨강.png) no-repeat center center;
+    background-size: cover;
+}
+
+
+/* footer 영역 */
+.footer{
+    width: 100%;
+    height: 450px;
+    background-color: #000;
+    padding: 85px 0 85px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-txt-1{
+    font-size: 0.938em;
+    color: #fff;
+}
+.f-txt-1 a{
+    margin-right: 80px;
+}
+
+.f-txt-1 a:nth-child(4){
+    margin: 0;
+}
+
+.f-icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-icon-box a{
+    margin-right: 40px;
+}
+.f-icon-box a:nth-child(3){
+    margin-right: 0;
+}
+.f-txt-2{
+    font-size: 0.938em;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.f-txt-2 p:nth-child(1){
+    margin-bottom: 5px;
+}
+.f-txt-3{
+    font-size: 0.938em;
+    color: #fff;
+}
+
+svg{
+      cursor: pointer;
+  }
+
+.sec-2-r-m,.sec2-m-btn,.sec-2-r-m-img,.sec2-m-top,
+.sec-4-m,.scrollEvent-m{
+    display: none;
+}
+
+
+
+/* 미디어쿼리 */
+@media (max-width: 1600px){
+    .sec-2-top, .sec-2-bottom {
+        height: 430px;
+    }
+}
+@media (max-width: 1500px){
+    .sec-2-top, .sec-2-bottom {
+        height: 400px;
+    }
+    .banner-back {
+        padding: 0px 120px 0 80px;
+    }
+    .baner-camera{
+        width: 530px;
+        height: 200px;
+    }
+    .sec-2-r-m{
+        display: flex;
+    }
+    .sec-2-r-m-img{
+        width: 30%;
+    }
+    .camera {
+        position: absolute;
+        top: 55%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+    }
+    .sec-img img{
+        width: 90%;
+    }
+    .sec4-txt h3{
+        font-size: 1.1rem;
+    }
+    .sec4-txt:after{
+        width: 20px;
+        height: 20px;
+    }
+    .sec-2-txt p,.sec-2-txt h3{
+        font-size: 1em;
+    }
+    .sec4-l,
+    .sec4-r{
+        background-position: 15% center ;
+    }   
+}
+@media (max-width: 1300px){
+    .auto-slider-wrap{
+        width: 800%;
+    }
+    .in-auto-slider{
+        width: calc(50% - 20px);
+    }
+    .sec-2-top, .sec-2-bottom {
+        height: 360px;
+    }
+    .sec4-txt{
+        margin-left: 10px;
+    }
+    .sec4-l,
+    .sec4-r{
+        background-position: 30% center ;
+    }   
+}
+@media (max-width: 1150px){
+    .sec-2-txt p,.sec-2-txt h3{
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 1090px){
+    .sec-1 {
+        height: 680px;
+    }
+    .header-logo{
+        margin-right: 50px;
+    }
+    .baner-txt h2{
+        font-size: 35px;
+    }
+    .sec-2-top, .sec-2-bottom {
+        height: 320px;
+    }
+    .sec3-mask{
+        margin: 0;
+    }
+    .sec-4{
+        padding: 0;
+    }
+    .baner-txt h3 {
+        font-size: 25px;
+    }
+    .banner-back{
+        padding: 0px 25px 0 25px;
+    }
+    .baner-camera {
+        width: 430px;
+        height: 160px;
+    }
+    .sec-img {
+        width: 450px;
+        height: 400px;
+    }.sec-1-l .sec-1-txt p {
+        font-size: 0.9em;
+    }
+    .sec-1-l .sec-1-txt h3 {
+        font-size: 2.8em;
+    }
+    .icon-bottombox input{
+        display: none;
+    }
+    .icon-bottombox:before{
+        top: 2px;
+        left:33px;
+    }
+}
+@media (max-width: 960px){
+    .sec2-m-btn,.sec-2-r-m-img,
+    .sec-4-m,.scrollEvent-m{
+        display: block;
+    }
+    .sec3-header{
+        margin:0 40px;
+    }
+    .sec-1-area{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .icon-m li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .icon-m li img{
+        width: 100%;
+        height:auto;
+    }
+    .sec-2-r-m{
+        width: 50%;
+    }
+    .sec-2-r-m-img{
+        width: 100%;
+    }
+    .sec2-m-top{
+        display: flex;
+    }
+    .banner{
+        position: relative;
+    }
+    .header-m1{
+        width: 100%;
+        height:100%;
+        position:absolute;
+        top: 0;
+        left: 0%;
+        background-color: #000;
+    }
+    .header-logo-m{
+        width: 150px;
+        margin-right: 40px;
+    }
+    .header-area-m{
+        display: flex;
+        width: 100%;
+        height: 80px;
+        align-items: center;
+        padding: 0 25px;
+        box-sizing: border-box;
+    }
+    .nav-m{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .menu-m{
+        display: flex;
+    }
+    .menu-m li:nth-child(2) a::before{
+        content: "/";
+        margin: 0 5px;
+        
+    }
+    .icon-m{
+        display: flex;
+    }
+    .icon-m li:nth-child(2){
+        margin-left: 10px;
+    }
+    .header-m-1{
+        display: flex;
+        width: 100%;
+        height: calc(100% - 80px);
+    }
+    .boder-box{
+        width: 10%;
+        border-right:1px solid #fff ;
+    }
+    .h-m-box{
+        width: 90%;
+        position: relative;
+    }
+    .h-m-box img{
+        position: absolute;
+        left: -26px;
+        cursor: pointer;
+    }
+    .h-m-box2{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .h-m-box img:nth-child(1){
+        object-fit: contain;
+        height: 22px;
+        width: 112px;
+        top: 5%;
+    }
+    .h-m-box img:nth-child(2){
+        object-fit: contain;
+        height: 22px;
+        width: 71px;
+        top: 25%;
+    }
+    .h-m-box img:nth-child(3){
+        object-fit: contain;
+        height: 22px;
+        width: 196px;
+        top: 45%;
+    }
+    .h-m-box img:nth-child(4){
+        object-fit: contain;
+        height: 22px;
+        width: 156px;
+        top: 65%;
+    }
+    .h-m-box2{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        right: 5%;
+        bottom: 10%;
+        font-size: 24px;
+    }
+    .h-m-box2 a{
+        margin-bottom: 10px;
+    }
+    .h-m-box2 a:nth-child(3){
+        margin-bottom: 0;
+    }
+
+    .menu{
+        display: none;
+    }
+    .icon-topbox{
+        display: none;
+    }
+    .icon-bottombox:before{
+        display: none;
+    }
+    nav {
+        justify-content: flex-end;
+    }
+    .header-area {
+        background-color: transparent;
+        position: absolute;
+    }
+    .banner-back {
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .baner-camera{
+        display: none;
+    }
+    .baner-txt h2 {
+        font-size: 50px;
+    }
+    .baner-txt h3 {
+        font-size: 35px;
+    }
+    .baner-txt{
+        opacity: 0;
+        animation: baner-opacity 1s linear;
+        animation-fill-mode: forwards;
+    }
+    @keyframes baner-opacity{
+        0% {
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .sec-1 {
+        height: 130vh;
+        width: 100vw;
+        background: url(../img/섹션-1/백그라운드\(ㅡ\).jpg) no-repeat left bottom;
+        background-size: cover;
+        margin-bottom: 200px;
+    }
+    .sec-1-l{
+        width: 100%;
+        height: 50%;
+    }
+    .sec-1-l .sec-1-txt h3{
+        margin-bottom: 15px;
+        font-size: 2.4em;
+    }
+    .sec-1-txt{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        font-size: 0.9rem;
+        font-weight: 100;
+        transform: translate(-50%);
+    }
+    .sec-1-l .sec-1-txt p{
+        font-size: 0.9rem;
+        line-height: 30px;
+    }
+    .sec-area {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+    .sec-4-m h2{
+        font-weight: 200;
+    }
+
+    .sec-img {
+        width: 90%;
+        height: 90%;
+    }
+    .sec-img img{
+        object-fit: contain;
+    }
+    .sec-2-r-m2 .sec-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sec-2-top{
+        background: url(../img/섹션-2/earth-gf757ce0d7_640.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .sec-2-bottom{
+        background: url(../img/섹션-2/2-1.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .sec-2-black{
+        background-color: transparent;
+        position: relative;
+    }
+    .sec-1-r {
+        width: 100%;
+        height: 50%;
+    }
+    .sec-1-but{
+        display: none !important;
+    }
+    .sec-2-t,.sec-2-b{
+        display: none;
+    }
+    .sec-2-black{
+        position: relative;
+    }
+    .sec-2-black,.sec-2-r-box,.sec2-l-box,.sec-2-img-img{
+        width: 100%;
+        height: 100%;
+    }
+    .sec-2-top, .sec-2-bottom {
+        height: 500px;
+        margin-bottom: 75%;
+    }
+    .sec-2-bottom .sec2-m-top{
+        margin-bottom: 20px;
+        display: flex;
+    }
+    .sec2-m-top h3{
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 200;
+        margin: 50px 0;
+    }
+    .txt2::after{
+        display: none;
+    }
+    .sec-2-top .txt2 br,
+    .sec-2-r-box,.sec2-l-box{
+        display: none;
+    }
+    .sec-2-r-m1, .sec-2-r-m2{
+        width: 100%;
+        height: 90%;
+    }
+    .sec2-m-btn{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .sec2-m-btn a{
+        border: 1px solid #fff;
+        padding: 2px 20px;
+    }
+    .sec2-m-btn a h3{
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .sec-2-r-m1 .sec-2-img img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .sec-2-txt p {
+        font-size: 1.5em;
+    }
+    .sce-2-area{
+        flex-direction:column ;
+        position: absolute;
+        top: 65%;
+        left: 0;
+        align-items: center;
+    }
+    .sec-2-bottom .sce-2-area{
+        top: 75%;
+    }
+
+    
+    .auto-slider{
+        animation:none;
+    }
+    .in-auto-slider a {
+        width: 100%;
+        position: relative;
+        height: 450px;
+    }
+    .sec3-mask{
+        height: 100%;
+    }
+    .auto-slider-wrap,.auto-slider{
+        width: 100%;
+        display:block;
+    }
+    .auto-slider-wrap{
+        padding: 0 35px;
+        box-sizing: border-box;
+    }
+    .auto-slider:nth-child(2){
+        display: none;
+    }
+    .in-auto-slider {
+        width: 49%;
+        display: inline-block;
+        margin-right: 1%;
+        margin-bottom: 10px;
+    }
+    .in-auto-slider:nth-child(2n){
+        margin-right: 0;
+    }
+    .in-auto-slider:nth-child(7){
+        display: none;
+    }
+    .sec-4{
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec4-area{
+        flex-direction:column;
+        height: 100%;
+        width: 90%;
+    }
+    .sec4-l,.sec4-r{
+        width: 100%;
+        height: 50%;
+        border-bottom: 20px solid red;
+        flex-direction: column;
+        justify-content: end;
+
+    }
+    .sec4-l{
+        background: url(../img/섹션-4/sec4-l-m.jpg) no-repeat center left;
+        background-size:cover ;
+        margin-bottom: 50px;
+    }
+    .sec4-r{
+        background: url(../img/섹션-4/sec4-r-m.jpg) no-repeat center left;
+        background-size:cover ;
+
+    }
+    .sec4-txt,.sec4-hover{
+        display: none;
+    }
+    .sec-4-m{
+        background-color: rgba(0, 0, 0, 0.466);
+        color: #fff;
+        width: 100%;
+        text-align: center;
+    }
+    .scrollEvent{
+        display: none;
+    }
+    .scrollEvent-m{
+        width: 100%;
+        height: 100%;
+    }
+    .back-m1,.back-m2,.back-m3{
+        height: 800px;
+        width: 80%;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .img-m-1{
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+
+    }
+    .img-m-2{
+        position: absolute;
+        top:0;
+        left:20%;
+        width: 100%;
+        height: 100%;
+
+    } .img-m-3{
+        position: absolute;
+        top: 0;
+        left:40%;
+        width: 100%;
+        height: 100%;
+
+    }
+    .img-1-m,.img-2-m,.img-3-m{
+        position: relative;
+        height: 100%;
+    }
+    .txt-m{
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translatey(-50%);
+        color: #FFF;
+        font-size: 2rem;
+        width: 100%;
+        opacity: 0.2;
+    }
+
+    .back-m2  .txt-m{
+        left: 80px;
+    }
+    .back-m3 .txt-m{
+        left: 130px;
+    }
+    .sec5-m{
+        display: block;
+    }
+    .sec5-pc{
+        display: none;
+    }
+
+}
+@media (max-width: 700px){
+    .txt-m h1{
+        font-size: 2rem;
+    }
+    .footer{
+        font-size: 10px;
+    }
+    .f-txt-1 a{
+        margin-right: 10px;
+    }
+    .footer-logo svg{
+        width: 80%;
+    }
+    .f-txt-2{
+        padding: 0px 41px;
+        box-sizing: border-box;
+    }
+    .in-auto-slider a{
+        height: 350px;
+    }
+    .sec3-header {
+        height: 206px;
+        display: flex;
+        align-items: center;
+        margin: 0 40px;
+    }
+    .title-t {
+        width: 100%;
+        height: calc(50% - 60px);
+        background-color: #000;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 0;
+        left: -1%;
+    }
+}
+@media (max-width: 500px){
+    .sec-1-l .sec-1-txt p {
+        font-size: 0.7rem;
+        line-height: 25px;
+    }
+    .sec-3 {
+    margin-bottom: 100px;
+    }
+    .title-t {
+        width: 100%;
+        height: calc(50% - 80px);
+        background-color: #000;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 0;
+        left: -1%;
+    }
+    .auto-slider-wrap {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .sec-4-m h2 {
+        font-weight: 100;
+        font-size: 1.2rem;
+    }
+    .sec2-m-btn {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .in-auto-slider a {
+        height: 200px;
+    }
+    .sec2-m-top h3 {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 200;
+        margin: 30px 0;
+    }
+    .sec2-m-top h3{
+        font-size: 0.9rem;
+    }
+    .sec-1-l .sec-1-txt {
+        width: 58%;
+    }
+    .sec-2-top, .sec-2-bottom {
+        height: 500px;
+        margin-bottom: 55%;
+    }
+    .sec-2-bottom .sec2-m-top{
+        margin: 0;
+    }
+    .sec2-m-btn a h3 {
+        font-size: 0.9rem;
+        font-weight: 100;
+    }
+    .txt-m {
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        transform: translatey(-50%);
+        color: #FFF;
+        font-size: 2rem;
+        width: 100%;
+    }
+    .back-m2 .txt-m,.back-m3 .txt-m{
+        left: 25px;
+    }
+    .f-txt-2 {
+        padding: 0px 15px;
+        box-sizing: border-box;
+    }
+    .footer{
+        font-size: 5px;
+    }
+    .title1-1{
+        background: url(../img/Parallax/title-C.png) no-repeat center center;
+        background-size:contain ;
+        width: 6%;
+        height: 100%;
+        left: 6.5%;
+    }
+    .title1-3 {
+        background: url(../img/Parallax/title-N.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 18.5%;
+    }
+    .title1-4 {
+        background: url(../img/Parallax/title-O.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 24.5%;
+    }
+    .title1-5 {
+        background: url(../img/Parallax/title-N.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 30.5%;
+    }
+    .title1-7 {
+        background: url(../img/Parallax/title-T.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 42.5%;
+    }
+    .title1-8 {
+        background: url(../img/Parallax/title-U.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 48.5%;
+    }
+    .title1-9 {
+        background: url(../img/Parallax/title-D.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 54%;
+    }
+    .title1-10 {
+        background: url(../img/Parallax/title-I.png) no-repeat center center;
+        background-size: contain;
+        width: 3%;
+        height: 100%;
+        left: 60%;
+    }
+    .title1-11 {
+        background: url(../img/Parallax/title-O.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 63%;
+    }
+    .title1-go {
+        background: url(../img/Parallax/title-go.png) no-repeat center center;
+        background-size: contain;
+        width: 14%;
+        height: 100%;
+        left: 0%;
+        top: 0%;
+    }
+    .titlel2-go {
+        background: url(../img/Parallax/title-go.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        top: 0% !important;
+    }
+    @keyframes txt-go2 {
+        0%{
+            left: -7%;
+        }
+        100%{
+            left: 71%;
+        }
+    }
+    .title2-1 {
+        background: url(../img/Parallax/title-P.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 0%;
+    }
+    .title2-2 {
+        background: url(../img/Parallax/title-H.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 6%;
+    }
+    .title2-3 {
+        background: url(../img/Parallax/title-O.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 12%;
+    }
+    .title2-4 {
+        background: url(../img/Parallax/title-H.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 18%;
+    }
+    .title2-5 {
+        background: url(../img/Parallax/title-O.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 24%;
+    }
+    .title2-6 {
+        background: url(../img/Parallax/title-G.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 30.5%;
+    }
+    .title2-7 {
+        background: url(../img/Parallax/title-R.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 36.5%;
+    }
+    .title2-8 {
+        background: url(../img/Parallax/title-A.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 42%;
+    }
+    .title2-9 {
+        background: url(../img/Parallax/title-P.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 48%;
+    }
+    .title2-10 {
+        background: url(../img/Parallax/title-H.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 54%;
+    }
+    .title2-11 {
+        background: url(../img/Parallax/title-E.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 59.5%;
+    }
+    .title2-12 {
+        background: url(../img/Parallax/title-R.png) no-repeat center center;
+        background-size: contain;
+        width: 6%;
+        height: 100%;
+        left: 65%;
+    }
+    .baner-txt h2 {
+        font-size: 42px;
+    }
+    .baner-txt h3 {
+        font-size: 30px;
+    }
+}
