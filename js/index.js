@@ -34,11 +34,19 @@ $(document).ready(function(){
 
     $(document).ready(function(){
         $(".hamburger_but").click(function(){
-            $(this).toggleClass("active");
-            $(".hamburger_submenu").toggleClass("active");
-            $(".header_menu").toggleClass("active");
+          $(this).toggleClass("active");
+          $(".hamburger_submenu").toggleClass("active");
+          $(".header_menu").toggleClass("active");
+    
+          if ($(".hamburger_submenu").hasClass("active")) {
+            // .active 클래스가 추가되었을 때 스크롤을 막아줍니다.
+            $("body").css("overflow", "hidden");
+          } else {
+            // .active 클래스가 제거되었을 때 스크롤을 허용합니다.
+            $("body").css("overflow", "auto");
+          }
         });
-    });
+      });
     
     $(document).ready(function(){
         $(".hamburger_submenu_item").hover(
