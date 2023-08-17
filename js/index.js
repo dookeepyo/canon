@@ -3,6 +3,56 @@ $(document).ready(function(){
     console.log($(window).scrollTop());
     // 콘솔창으로 스크롤 상단px값을 확인하려고 썻음\
 
+
+    $(document).ready(function(){
+        var hoverTimer;
+    
+        $(".header_menu_item").hover(
+            function(){
+                var subMenu = $(this).find(".header_menu_item_sub");
+                subMenu.addClass("active");
+                
+                // 스톱 메소드를 사용하여 hover 이벤트 중단
+                clearTimeout(hoverTimer);
+            },
+            function(){
+                var subMenu = $(this).find(".header_menu_item_sub");
+                
+                // 특정 시간 후에 hover 이벤트가 발생하지 않도록 설정
+                hoverTimer = setTimeout(function(){
+                    subMenu.removeClass("active");
+                }, 300); // 300 밀리초 (0.3초) 이후에 서브메뉴 숨김
+            }
+        );
+        
+        // 메뉴 아이템에서 벗어날 때 .header_menu_item_sub 의 .active 클래스 제거
+        $(".header_menu_item").mouseleave(function(){
+            var subMenu = $(this).find(".header_menu_item_sub");
+            subMenu.removeClass("active");
+        });
+    });
+
+    $(document).ready(function(){
+        $(".hamburger_but").click(function(){
+            $(this).toggleClass("active");
+            $(".hamburger_submenu").toggleClass("active");
+            $(".header_menu").toggleClass("active");
+        });
+    });
+    
+    $(document).ready(function(){
+        $(".hamburger_submenu_item").hover(
+            function(){
+                // 호버 시작 시
+                $(this).children(".hamburger_submenu_item_p_box").addClass("active");
+            },
+            function(){
+                // 호버 종료 시
+                $(this).children(".hamburger_submenu_item_p_box").removeClass("active");
+            }
+        );
+    });
+
     var swiper1 = new Swiper(".mySwiper1", {
         loop: true, // 무한 루프 옵션
         navigation: {
@@ -150,6 +200,43 @@ $(document).ready(function(){
         });
     });
     
+    $(document).ready(function(){
+        $(".section_2_item_ck_item").click(function(){
+            var clickedClass = $(this).attr("class").split(" ")[1];
+
+            // 모든 항목에서 active 클래스 제거
+            $(".section_2_item_ck_item").removeClass("active");
+
+            // 클릭한 항목에만 active 클래스 추가
+            $(this).addClass("active");
+
+            // 모든 섹션 항목에서 클래스 제거
+            $(".section_2_item_pa").removeClass("active");
+
+            // 해당 클래스를 가진 섹션 항목에 active 클래스 추가
+            $(".section_2_item_pa." + clickedClass).addClass("active");
+
+            // 추가로 섹션 클래스에 active를 추가하는 부분
+            if (clickedClass === "section_2_item_ck_item_in") {
+                $(".section_2_item_pa.section_2_item_in").addClass("active");
+                $(".section_2_title").text("Instagram");
+            } else if (clickedClass === "section_2_item_ck_item_fb") {
+                $(".section_2_item_pa.section_2_item_fb").addClass("active");
+                $(".section_2_title").text("Facebook");
+            } else if (clickedClass === "section_2_item_ck_item_tw") {
+                $(".section_2_item_pa.section_2_item_tw").addClass("active");
+                $(".section_2_title").text("Twitter");
+            }
+        });
+    });
+
+    var swiper4 = new Swiper(".mySwiper4", {
+        direction: "vertical", // 세로 슬라이드 설정
+        loop: true, // 무한 루프
+        autoplay: {
+          delay: 3000, // 2초마다 슬라이드 변경
+        },
+    });
 
 }); //끝
 
